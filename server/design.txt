@@ -1,0 +1,22 @@
+//Real Estate application backend api
+
+requirements:
+    authentcation.
+    user can upload a site.
+    other users can view the site.
+
+-routes specification
+
+/auth route: for login and registration
+/Site route: for getting Site details
+
+maybe idk routes:
+/user: to get user details when clicked and for profile pages.
+
+
+Database:
+mysql with Prisma
+// take a look here for a example
+https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express
+
+
