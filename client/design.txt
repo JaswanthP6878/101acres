@@ -1,2 +1,9 @@
 we will use Tailwind, ill see if i want to use Daisy or not.
 #better understanding of React-router-dom is required to better make the website.
+
+
+
+6th march
+added styles and still a lot of work pending, had an idea on  how to add protected 
+routes using children concepts and will test out soon, currently react-router-dom is working
+but still need to tweak a bit
