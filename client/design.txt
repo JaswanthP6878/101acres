@@ -1,1 +1,2 @@
 we will use Tailwind, ill see if i want to use Daisy or not.
+#better understanding of React-router-dom is required to better make the website.

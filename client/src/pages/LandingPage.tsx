@@ -2,11 +2,14 @@ import React from "react";
 export default function LandingPage() {
   return (
     <div>
+      <div className="navbar bg-base-300">
+        <a className="btn btn-ghost normal-case text-xl mx-8">100Acres</a>
+      </div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Find your next home here!</h1>
-            <p className="py-6">100 acres provides a platform for you to view some of the hottest properties in the market</p>
+            <p className="py-6">100 acres provides a platform for you to view some of the hottest properties in the market!</p>
             <button className="btn btn-outline btn-primary">Register</button>
             <button className="mx-4 btn btn-outline btn-primary">Login</button>
           </div>
