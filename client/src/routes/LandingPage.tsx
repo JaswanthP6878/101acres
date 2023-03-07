@@ -1,5 +1,6 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 export default function LandingPage() {
+ const navigate = useNavigate();
   return (
     <div>
       <div className="navbar bg-base-300">
@@ -10,8 +11,8 @@ export default function LandingPage() {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Find your next home here!</h1>
             <p className="py-6">100 acres provides a platform for you to view some of the hottest properties in the market!</p>
-            <button className="btn btn-outline btn-primary">Register</button>
-            <button className="mx-4 btn btn-outline btn-primary">Login</button>
+            <button onClick={() => {navigate('/signup')}} className="btn btn-outline btn-primary">Register</button>
+            <button onClick={() => {navigate('/loginup')}}  className="mx-4 btn btn-outline btn-primary">Login</button>
           </div>
         </div>
       </div>
