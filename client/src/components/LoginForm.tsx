@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import axios from 'axios';
 interface LoginFormInterface {
     addAlert : (alert : boolean) => void
 }
@@ -7,16 +8,18 @@ export default function LoginForm({addAlert}: LoginFormInterface) {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
-    const handleSubmit = (e: React.FormEvent)=> {
+    const handleSubmit = async (e: React.FormEvent)=> {
         e.preventDefault();
         if (name === "" || email === "" || password === ""){
             addAlert(true);
             return;
         } else {
-            console.log("form submitted");
+           //testing data passing
+           const { data } = await axios.get('http://localhost:8000/user')
+           console.log(data);
+           return
         }
     }
-
     return (
         <div className="form-control w-full min-w-xs max-w-xs border-4 flex flex-col align-center rounded-lg">
             <form onSubmit={handleSubmit} action="/" method="GET">
